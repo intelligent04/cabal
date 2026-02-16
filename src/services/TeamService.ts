@@ -131,6 +131,6 @@ export class TeamService {
   }
 
   private generateTeamId(): string {
-    return `team_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    return `team_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
   }
 }

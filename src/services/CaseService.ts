@@ -86,6 +86,6 @@ export class CaseService {
   }
 
   private generateCaseId(): string {
-    return `case_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    return `case_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
   }
 }
